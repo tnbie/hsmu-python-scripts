@@ -295,3 +295,17 @@ print(idade)
 
 frase = "Python e uma linguagem divertida"
 print(frase[:12])
+
+## usando elif 
+estado = input('Nome de um estado: ').lower()
+
+if 'ceara' in estado:
+    print('Fortaleza')
+elif 'bahia' in estado:
+    print('Salvador')
+elif 'minas gerais' in estado:
+    print('Belo Horizonte')
+elif 'amazonas' in estado:
+    print('Manaus')
+else:
+    print('O estado inserido ainda não foi cadastrado!')
