@@ -80,6 +80,24 @@ numero = int(input('Digite um valor: '))
 if numero % 2 == 0:
     print('{0} é um número par'.format(numero))
 else:
-    print('{0} é um número ímpar'.format(numero)
+    print('{0} é um número ímpar'.format(numero))
 
 
+## usando elif 
+estado = input('Nome de um estado: ').lower()
+
+if 'ceara' in estado:
+    print('Fortaleza')
+elif 'bahia' in estado:
+    print('Salvador')
+elif 'minas gerais' in estado:
+    print('Belo Horizonte')
+elif 'amazonas' in estado:
+    print('Manaus')
+else:
+    print('O estado inserido ainda não foi cadastrado!')
+    
+
+# operador ternario
+numero = int(input("Digite um valor: "))
+print("Numero par" if numero % 2 == 0 else "Numero impar")
