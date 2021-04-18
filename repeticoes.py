@@ -54,4 +54,125 @@ for number in range(0, 11):
     print(3 * number)
     
 
-# break & continue
+# break
+# exemplo 1
+for letra in 'Recife':
+    # executa por letra ate o i, e no i, ele para a execucao
+    if letra == 'i':
+        break
+    print('Letra:', letra)
+    
+# exemplo 2    
+numero = 1
+while numero > 0:
+    print('Valor:', numero)
+    numero += 1
+    # executa ate o numero 4, e no 5, ele para a execucao
+    if numero == 5:
+        break
+    
+# continue
+# exemplo 1
+for letra in 'Recife':
+    # executa por letra ate o i, e no i, ele salta para proxima execucao
+    if letra == 'i':
+        continue
+    print('Letra:', letra)
+    
+# exemplo 2
+numero = 5
+while numero > 0:
+    print('Valor: ', numero)
+    numero -= 1
+    if numero == 5:
+        continue
+
+# pass
+# utilizado para futuras implementacoes
+# interpretado como nulo
+for letra in 'Recife':
+    pass
+
+# iteracao usando loops
+# iterando sobre listas, usando for e while
+linguagens = ['Python', 'C++', 'Java', 'Swift', 'Dart']
+
+# ler lista usando o for
+for l in linguagens:
+    print(l)
+
+# ler lista usando o while
+x = 0
+while x < len(linguagens):
+    print(linguagens[x])
+    x += 1
+    
+# iterando sobre tuplas
+frutas = ('banana', 'maca', 'pera', 'laranja')
+
+# retornando o index e o valor na tupla
+for var in frutas:
+    # detalhe na palavra index aqui
+    print(frutas.index(var), var)
+    
+    
+# iterando sobre dicionarios
+
+
+# usando chaves
+supermercado = {'banana': 1.90, 'arroz': 4.5, 'óleo': 6.45}
+
+print(supermercado.keys())
+
+for key in supermercado.keys():
+    # busca pelas chaves do dicionario
+    print(key)
+
+
+# usando valores
+supermercado = {'banana': 1.90, 'arroz': 4.5, 'óleo': 6.45}
+
+print(supermercado.values())
+
+for value in supermercado.values():
+    # busca pelos valores do dicionario
+    print(value)
+    
+    
+# usando itens
+supermercado = {'banana': 1.90, 'arroz': 4.5, 'óleo': 6.45}
+
+print(supermercado.items())
+
+for item in supermercado.items():
+    # busca pelos itens do dicionario
+    print(item)
+
+# exemplo 1
+total = 0
+
+compras = {
+    "camisa": 79.99,
+    "sapato": 299.99,
+    "cinto": 50.00,
+    "hamburguer": 22.80,
+    "cinema": 35.50,
+    "pipoca": 10.00,
+    "estacionamento": 10.00
+}
+
+# itera sobre valores dos items
+for item in compras.values():
+    total = total + item
+
+print("Total gasto R$ %.2f" % total)
+
+# exemplo 2
+lista1 = [5, 20, 15, 20, 25, 50, 20]
+
+# remove o item 20 da lista
+for num in lista1:
+    if num == 20:
+        lista1.remove(num)
+
+print(lista1)
